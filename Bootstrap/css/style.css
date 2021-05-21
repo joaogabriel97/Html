@@ -1,3 +1,25 @@
+body{
+    font: 20px Arial, sans-serif;
+}
+
 .navbar{
-    background-color: red;
+    background-color: seagreen;
+}
+
+.somos{
+    background-color: gray;
+    color: white;
+}
+ .margin{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.parceiros{
+    background-color: #588;
+}
+
+.bg-footer{
+    background-color:black;
+    color: white;
 }
