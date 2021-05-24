@@ -39,7 +39,7 @@ function update(event) {
     if(event.keyCode == 40 && direction != "up") direction = "down";
 }
 
-//Adição de áudio para cada vez que a cobra comer
+//Importando o áudio para quando a cobra comer
 function play() {
     var audio = new Audio('comida.mp3');
     audio.play();
@@ -68,6 +68,8 @@ function iniciarJogo() {
     if (snakeX != food.x || snakeY != food.y) {
         snake.pop();
     } else{
+        //Chamada do áudio para cada comida de fruta
+        play();
         food.x = Math.floor(Math.random() * 15 + 1) * box;
         food.y = Math.floor(Math.random() * 15 + 1) * box;
     }
